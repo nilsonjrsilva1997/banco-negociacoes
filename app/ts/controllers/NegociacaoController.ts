@@ -29,7 +29,7 @@ class NegociacaoController {
         });
         console.log(negociacao);
 
-        this._negociacoesView.template();
-        this._negociacoesView.update();
+        this._negociacoesView.template(this._negociacoes);
+        this._negociacoesView.update(this._negociacoes);
     }
 }

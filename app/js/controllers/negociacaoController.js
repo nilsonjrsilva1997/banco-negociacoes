@@ -16,7 +16,7 @@ class NegociacaoController {
             console.log(`valor: ${negociacao.valor}`);
         });
         console.log(negociacao);
-        this._negociacoesView.template();
-        this._negociacoesView.update();
+        this._negociacoesView.template(this._negociacoes);
+        this._negociacoesView.update(this._negociacoes);
     }
 }
