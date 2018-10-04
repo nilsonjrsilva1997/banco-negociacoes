@@ -1,12 +1,6 @@
-class NegociacoesView {
+class NegociacoesView extends View{
 
     private _negociacaoHTML: string;
-    private _elemento: Element;
-
-    constructor(seletor: string) {
-        this._elemento = document.querySelector(seletor);   
-        console.log('View criada com sucesso');
-    }
 
     update(negociacoa: Negociacoes): void {
         this._elemento.innerHTML = this._negociacaoHTML;
@@ -32,7 +26,7 @@ class NegociacoesView {
                                 <td>${negociacao.valor}</td>
                                 <td>${negociacao.volume}</td>
                             </tr>`;
-                }).join()}
+                }).join('')}
             </tbody>
 
             <tfoot>
